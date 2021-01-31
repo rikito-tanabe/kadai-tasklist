@@ -25,6 +25,8 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+
+
     @Column(name = "content", length = 255, nullable = false)
     private String content;
 
@@ -33,6 +35,10 @@ public class Task {
 
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
+
+
+
+
 
     public Integer getId() {
         return id;
